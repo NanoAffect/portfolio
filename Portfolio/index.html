@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Your Name</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, Arial, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#e2e8f0;
+    line-height:1.6;
+}
+
+/* NAVBAR */
+
+nav{
+    position:fixed;
+    width:100%;
+    background:#020617;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 10%;
+    border-bottom:1px solid #1e293b;
+    z-index:1000;
+}
+
+nav h1{
+    font-size:20px;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#cbd5f5;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+}
+
+.hero h2{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    max-width:600px;
+    margin-bottom:30px;
+    color:#94a3b8;
+}
+
+.button{
+    padding:12px 26px;
+    border-radius:6px;
+    border:none;
+    font-size:16px;
+    cursor:pointer;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.primary{
+    background:#38bdf8;
+    color:#020617;
+}
+
+.primary:hover{
+    background:#0ea5e9;
+}
+
+.secondary{
+    border:1px solid #38bdf8;
+    color:#38bdf8;
+    margin-left:10px;
+}
+
+.secondary:hover{
+    background:#38bdf8;
+    color:#020617;
+}
+
+/* SECTIONS */
+
+section{
+    padding:90px 10%;
+}
+
+section h3{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+section p{
+    color:#94a3b8;
+}
+
+/* PROJECTS */
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.project{
+    background:#020617;
+    border:1px solid #1e293b;
+    padding:20px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.project:hover{
+    transform:translateY(-5px);
+    border-color:#38bdf8;
+}
+
+.project h4{
+    margin-bottom:10px;
+}
+
+/* SKILLS */
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:20px;
+}
+
+.skill{
+    background:#020617;
+    border:1px solid #1e293b;
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+/* CONTACT */
+
+.contact-buttons{
+    margin-top:20px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #1e293b;
+    color:#64748b;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:700px){
+
+    nav ul{
+        gap:15px;
+        font-size:14px;
+    }
+
+    .hero h2{
+        font-size:34px;
+    }
+
+}
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-img{
+    height:50px;
+    width:auto;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo-area">
+<img height = 50px width = 50px src="LogoTree.svg" class="logo-img">
+<h1>Joshua</h1>
+</div>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h2>Hi, I'm Joshua</h2>
+
+<p>
+A passionate developer who builds clean, efficient, and user-focused software.
+I enjoy creating tools, websites, and applications that solve real problems.
+</p>
+
+<div>
+<a class="button primary" href="#projects">View My Work</a>
+<a class="button secondary" href="#contact">Contact Me</a>
+</div>
+
+</section>
+
+<section id="about">
+
+<h3>About Me</h3>
+
+<p>
+Write a short professional summary about yourself here.  
+Example: I am a developer with experience in building web applications,
+automation tools, and modern user interfaces. I focus on writing clean code,
+learning new technologies, and creating reliable software.
+</p>
+
+</section>
+
+<section id="projects">
+
+<h3>Projects</h3>
+
+<div class="projects">
+
+<div class="project">
+<h4>Project One</h4>
+<p>
+Short description of the project. What problem it solved and what
+technologies were used.
+</p>
+</div>
+
+<div class="project">
+<h4>Project Two</h4>
+<p>
+Explain what this project does and why it is useful.
+Include languages, frameworks, or tools.
+</p>
+</div>
+
+<div class="project">
+<h4>Project Three</h4>
+<p>
+Describe a portfolio project, GitHub project, or professional work.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h3>Skills</h3>
+
+<div class="skills">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Python</div>
+<div class="skill">Git</div>
+<div class="skill">API Development</div>
+<div class="skill">UI Design</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h3>Contact</h3>
+
+<p>
+Feel free to reach out if you would like to work together or have any
+opportunities available.
+</p>
+
+<div class="contact-buttons">
+<a class="button primary" href="#">Email Me</a>
+<a class="button secondary" href="#">LinkedIn</a>
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Your Name • Portfolio</p>
+
+</footer>
+
+</body>
+</html>
